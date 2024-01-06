@@ -1,0 +1,16 @@
+@model List<Employee>
+
+@* //sayfa başında gelecek verinin tipi verilmeli *@
+<div>
+<h3>Users getting custom model</h3>
+  <div>
+    @foreach(Employee emp in Model){
+        <div class="lead">
+            
+            <h6> User FullName: @emp.FullName </h6>
+            <p><strong> User Id :</strong>@emp.Id </p>
+            <p><strong>User Age :</strong> @emp.Age </p>
+        </div>
+    }
+  </div>
+</div>

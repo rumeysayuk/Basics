@@ -20,7 +20,7 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapControllerRoute(
+app.MapControllerRoute(  //default home  ve index. buralar değiştirilerek istenilen sayfaya yönlendirme yapılmaktadır.
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 

@@ -1,0 +1,12 @@
+@model String[] // burada gelecek verinin tipi verildi
+<div>
+   <h3>
+    Developer sun
+   </h3>
+   <div class="lead"> 
+    @foreach(string name in Model){
+     <p>@name</p>
+    }
+   </div>
+</div>
+
